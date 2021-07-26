@@ -96,9 +96,9 @@ html, body {
 }
 
 .center-nose:hover {
-  transform: rotate(145deg);
-  -webkit-transform: rotate(145deg);
-  -ms-transform: rotate(145deg);
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
 }
 
 .mouth1 {
@@ -177,9 +177,9 @@ html, body {
 }
 
 .left-eye-trigger-top:hover {
-  transform: translateY(-100px);
-  -webkit-transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
+  transform: translateY(-48px);
+  -webkit-transform: translateY(-48px);
+  -ms-transform: translateY(-48px);
 }
 
 .zuoyanjian:hover {
@@ -221,9 +221,9 @@ html, body {
 }
 
 .yanpi2:hover {
-  transform: translateY(-100px);
-  -webkit-transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
 }
 
 .walk-video-2 {
@@ -292,7 +292,7 @@ html, body {
   z-index: -2;
 }
 
-.clickme{
+.clickme {
   position: absolute;
   object-fit: cover;
   z-index: 2;
@@ -308,17 +308,38 @@ html, body {
   transition-property: transform;
   transition: transform 300ms cubic-bezier(0.59, 0.03, 0.57, 0.98);
 }
+
 .clickme:active {
-  transform: translate(-100px,100px);
-  -webkit-transform: translate(-100px,100px);
-  -ms-transform: translate(-100px,100px);
+  transform: translate(-100px, 100px);
+  -webkit-transform: translate(-100px, 100px);
+  -ms-transform: translate(-100px, 100px);
 }
-
-
 
 .blood-video {
   position: absolute;
   margin-top: 120px;
   margin-left: 210px;
   z-index: 1;
+}
+
+.body {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 910px;
+  z-index: 1;
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  transition-duration: 3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  transition: transform 300ms cubic-bezier(0.59, 0.03, 0.57, 0.98);
+}
+
+.body:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
 }
