@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Yang" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="section-1 video-section section">
+      <video id="bgvid" class="bg-video" autoplay="autoplay" loop="loop" muted="muted">
+        <source src="Videos/bg.mp4" type="video/mp4">
+      </video>
+
+
+      <div class="content-1">
+        <div class="head-box">
+          <img src="img/bg01.png" alt="head">
+        </div>
+
+        <div class="center-nose">
+          <img src="img/nose.png" alt="nose">
+        </div>
+
+
+        <div class="hole">
+          <img src="img/hole.png" alt="hole">
+        </div>
+        <div class="mouth1">
+          <img src="img/mouth1.png" alt="mouth1">
+        </div>
+
+        <div class="mouth2">
+          <img src="img/mouth2.png" alt="mouth2">
+        </div>
+
+
+        <div class="left-eye-trigger">
+          <div class="left-eye-trigger-top">
+            <img class="yanpi" src="img/yanpi.png" alt="yanpi">
+          </div>
+          <div class="left-eye-trigger-bt">
+            <img class="zuoyanjian" src="img/zuoyanjian.png" alt="yanpi">
+          </div>
+          <video id="walk1" class="walk-video-1" loop width="122px" height="116px">
+            <source src="Videos/Walk.mp4" type="video/mp4">
+          </video>
+        </div>
+
+
+
+        <div class="right-eye-trigger">
+          <div class="yanpi2">
+            <img src="img/yanpi.png" alt="yanpi">
+          </div>
+          <div class="youyanjian">
+            <img src="img/youyanjian.png" alt="yanpi">
+          </div>
+          <video id="walk2" class="walk-video-2" loop width="122px" height="116px">
+            <source src="Videos/Walk.mp4" type="video/mp4">
+          </video>
+        </div>
+
+
+
+
+
+
+        <div class="click-left">
+          <img src="img/click1.png" alt="click">
+        </div>
+        <video id="leftcliv" class="leftclick-video " loop width="108px" height="116px">
+          <source src="Videos/1.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="click-right">
+          <img src="img/click1.png" alt="click">
+        </div>
+        <video class="rightclick-video" loop width="207px" height="118px">
+          <source src="Videos/2.mp4" type="video/mp4">
+        </video>
+
+
+
+
+
+
+      </div>
+
+
+      <div class="content-2">
+
+
+        <video id="mouthv" class="mouth-video" loop width="207px" height="118px">
+          <source src="Videos/3.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+      <div class="clickme">
+        <img src="img/clickme.png" alt="click">
+      </div>
+      <video id="blood" class="blood-video" loop width="90px" height="90px">
+        <source src="Videos/4.mp4" type="video/mp4">
+      </video>
+
+
+
+    </div>
+  </div>
+
+</body>
+<script>
+  var viewport = document.getElementsByClassName('content-2')[0]
+  var video1 = document.getElementById('mouthv')
+  var video2 = document.getElementById('leftcliv')
+  viewport.addEventListener('mouseover', function() {
+    video1.play()
+  }, false);
+  viewport.addEventListener('mouseout', function() {
+    video1.pause()
+  }, false);
+  viewport.addEventListener('mouseover', function() {
+    video2.play()
+  }, false);
+  viewport.addEventListener('mouseout', function() {
+    video2.pause()
+  }, false);
+</script>
+
+
+
+<script>
+  $(".click-left").click(function() {
+    if ($(this).css("transform") == 'none') {
+      $(this).css("transform", "translateX(-200px)");
+
+    } else {
+      $(this).css("transform", "translateX(-200px)");
+    }
+  });
+</script>
+
+<script>
+  $(".click-right").click(function() {
+    if ($(this).css("transform") == 'none') {
+      $(this).css("transform", "translateX(-200px)");
+
+    } else {
+      $(this).css("transform", "translateX(-200px)");
+    }
+  });
+</script>
+
+<script>
+  $(".clickme").click(function() {
+    if ($(this).css("transform") == 'none') {
+      $(this).css("transform", "translate(-100px,100px)");
+
+    } else {
+      $(this).css("transform", "translate(-100px,100px)");
+    }
+  });
+</script>
+
+
+</html>
