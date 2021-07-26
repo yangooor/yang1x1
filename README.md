@@ -1,1 +1,1 @@
-# www.yang1x1.xyz
+yang1x1.xyz
